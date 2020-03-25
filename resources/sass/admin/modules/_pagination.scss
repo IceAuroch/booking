@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+
+    .page-item {
+        margin: 0 5px;
+
+        .page-link {
+            padding: 0;
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            line-height: 30px;
+            text-align: center;
+            border: none;
+            background-color: transparent;
+        }
+
+        &.active {
+            span {
+                background-color: $accents;
+                color: #fff;
+                border-color: transparent;
+            }
+        }
+    }
+
+    &-prev,
+    &-next {
+        margin: 0 10px;
+    }
+}

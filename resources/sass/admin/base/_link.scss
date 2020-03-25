@@ -1,0 +1,16 @@
+a {
+    transition: 0.35s;
+
+    &.dashed {
+        border-bottom: 1px dashed rgba($primary, 0.4);
+    }
+
+    &.underline {
+        border-bottom: 1px solid rgba($primary, 0.4);
+    }
+
+    &:hover {
+        color: $accents;
+        border-bottom-color: rgba($accents, 0.8);
+    }
+}

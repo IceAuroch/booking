@@ -1,0 +1,12 @@
+label.btn {
+    position: relative;
+
+    [type="radio"] {
+        position: absolute;
+        left: -9999px;
+
+        &:checked + label {
+            background-color: $purple;
+        }
+    }
+}

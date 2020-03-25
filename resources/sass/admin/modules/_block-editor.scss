@@ -1,0 +1,45 @@
+.block-editor {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    &__header {
+        padding: 0.625rem 0.875rem;
+        @extend .bg-light;
+        border-bottom: 1px solid $border-color;
+    }
+
+    &__body {
+        padding: 0.875rem;
+        background-color: #fff;
+    }
+}
+
+.quill-editor {
+    position: relative;
+}
+
+.ql-editor {
+    font-size: 14px !important;
+    p:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+    border-color: $border-color !important;
+}
+
+.ql-toolbar.ql-snow {
+    border-radius: $border-radius $border-radius 0 0;
+}
+
+.ql-container.ql-snow {
+    border-radius: 0 0 $border-radius $border-radius;
+}
+
+.ql-snow .ql-tooltip {
+    left: 50% !important;
+    top: 5px !important;
+    transform: translate(-50%, 0) !important;
+}
